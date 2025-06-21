@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
+# Firebase Authentication Error Reference
 
-## Project info
+A comprehensive, searchable reference for Firebase Authentication error codes and their descriptions. This tool helps developers quickly find and understand Firebase authentication error messages.
 
-**URL**: https://lovable.dev/projects/8fb095b2-b877-44e0-8eef-02567ce3b296
+![Firebase Authentication Error Reference](https://junaidgandhi.com/assets/firebase-error-board.png)
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Comprehensive Error Database**: Contains 47 Firebase Authentication error codes with detailed descriptions
+- **Instant Search**: Filter error codes and descriptions in real-time
+- **Modern UI**: Clean, responsive interface with a beautiful design
+- **Developer-Friendly**: Easy to use and navigate for quick reference during development
 
-**Use Lovable**
+## 🛠️ Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8fb095b2-b877-44e0-8eef-02567ce3b296) and start prompting.
+- **React 18**: For building the user interface
+- **TypeScript**: For type-safe code
+- **Vite**: Fast build tool and development server
+- **Tailwind CSS**: For styling and responsive design
+- **shadcn/ui**: High-quality UI components
+- **React Router**: For navigation
+- **React Query**: For data management
+- **Lucide React**: For beautiful icons
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Why This Tool?
 
-**Use your preferred IDE**
+When working with Firebase Authentication, developers often encounter error codes that need quick explanation. This reference board provides instant access to all Firebase Authentication error codes and their meanings, saving development time and reducing frustration.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🔧 Installation and Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd firebase-error-display-board
+   ```
 
-Follow these steps:
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Open your browser and navigate to `http://localhost:5173`
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Building for Production
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+To build the application for production:
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+The build artifacts will be stored in the `dist/` directory.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔍 Usage
 
-**Use GitHub Codespaces**
+1. Browse the table to see all Firebase Authentication error codes
+2. Use the search bar to filter error codes or descriptions
+3. Click on error codes to copy them (if implemented)
+4. Reference the descriptions to understand what each error means and how to resolve it
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
+Contributions are welcome! If you'd like to add more error codes, improve descriptions, or enhance the UI:
 
-This project is built with:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📝 License
 
-## How can I deploy this project?
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Simply open [Lovable](https://lovable.dev/projects/8fb095b2-b877-44e0-8eef-02567ce3b296) and click on Share -> Publish.
+## 👨‍💻 Author
 
-## Can I connect a custom domain to my Lovable project?
+Built with ❤️ by [M Junaid Gandhi](https://junaidgandhi.com)
 
-Yes, you can!
+## 🙏 Acknowledgements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Firebase Documentation for error code references
+- The React and Vite communities for excellent tools
+- shadcn/ui for beautiful component designs
