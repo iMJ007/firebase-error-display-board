@@ -1,11 +1,8 @@
-
 import React from 'react';
 import ErrorCodeTable from '@/components/ErrorCodeTable';
 import { Shield, Database, Code2 } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+  return <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -81,13 +78,9 @@ const Index = () => {
 
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-gray-200/30">
-          <p className="text-gray-500">
-            Built with modern web technologies • Windows 11 inspired design
-          </p>
+          <p className="text-gray-500">Built with love by M Junaid Gandhi</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
