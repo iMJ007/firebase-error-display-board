@@ -74,47 +74,47 @@ const ErrorCodeTable: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto space-y-6">
       {/* Search Bar */}
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500 w-5 h-5 transition-colors duration-300" />
         <Input
           type="text"
           placeholder="Search error codes or descriptions..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="pl-10 h-12 text-base bg-white/80 backdrop-blur-sm border-gray-200/50 rounded-xl shadow-sm focus:bg-white transition-all duration-200"
+          className="pl-10 h-12 text-base bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-sm focus:bg-white dark:focus:bg-gray-800 transition-all duration-200 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500"
         />
       </div>
 
       {/* Table Container */}
-      <div className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/30 overflow-hidden">
+      <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200/30 dark:border-gray-700/30 overflow-hidden transition-colors duration-300">
         {/* Table Header */}
-        <div className="bg-gradient-to-r from-blue-50/80 to-indigo-50/80 backdrop-blur-sm px-6 py-4 border-b border-gray-200/30">
+        <div className="bg-gradient-to-r from-blue-50/80 to-indigo-50/80 dark:from-gray-700/80 dark:to-gray-600/80 backdrop-blur-sm px-6 py-4 border-b border-gray-200/30 dark:border-gray-700/30 transition-colors duration-300">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
             <div className="lg:col-span-2 flex items-center gap-2">
-              <Code className="w-5 h-5 text-blue-600" />
-              <span className="font-semibold text-gray-900">Error Code</span>
+              <Code className="w-5 h-5 text-blue-600 dark:text-blue-400 transition-colors duration-300" />
+              <span className="font-semibold text-gray-900 dark:text-gray-100 transition-colors duration-300">Error Code</span>
             </div>
             <div className="lg:col-span-3 flex items-center gap-2">
-              <AlertCircle className="w-5 h-5 text-orange-600" />
-              <span className="font-semibold text-gray-900">Description</span>
+              <AlertCircle className="w-5 h-5 text-orange-600 dark:text-orange-400 transition-colors duration-300" />
+              <span className="font-semibold text-gray-900 dark:text-gray-100 transition-colors duration-300">Description</span>
             </div>
           </div>
         </div>
 
         {/* Table Body */}
-        <div className="divide-y divide-gray-100/50 max-h-[600px] overflow-y-auto">
+        <div className="divide-y divide-gray-100/50 dark:divide-gray-700/50 max-h-[600px] overflow-y-auto transition-colors duration-300">
           {filteredCodes.map((error, index) => (
             <div
               key={error.code}
-              className="px-6 py-4 hover:bg-blue-50/30 transition-all duration-200 group"
+              className="px-6 py-4 hover:bg-blue-50/30 dark:hover:bg-gray-700/30 transition-all duration-200 group"
             >
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-start">
                 <div className="lg:col-span-2">
-                  <code className="inline-block bg-gray-100/80 text-red-600 px-3 py-1.5 rounded-lg text-sm font-mono border border-gray-200/50 group-hover:bg-red-50/80 transition-colors duration-200">
+                  <code className="inline-block bg-gray-100/80 dark:bg-gray-700/80 text-red-600 dark:text-red-400 px-3 py-1.5 rounded-lg text-sm font-mono border border-gray-200/50 dark:border-gray-600/50 group-hover:bg-red-50/80 dark:group-hover:bg-red-900/20 transition-colors duration-200">
                     {error.code}
                   </code>
                 </div>
                 <div className="lg:col-span-3">
-                  <p className="text-gray-700 text-sm leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed transition-colors duration-200">
                     {error.description}
                   </p>
                 </div>
@@ -126,15 +126,15 @@ const ErrorCodeTable: React.FC = () => {
         {/* No Results */}
         {filteredCodes.length === 0 && (
           <div className="px-6 py-12 text-center">
-            <AlertCircle className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-            <p className="text-gray-500 text-lg">No error codes found</p>
-            <p className="text-gray-400 text-sm">Try adjusting your search term</p>
+            <AlertCircle className="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4 transition-colors duration-300" />
+            <p className="text-gray-500 dark:text-gray-400 text-lg transition-colors duration-300">No error codes found</p>
+            <p className="text-gray-400 dark:text-gray-500 text-sm transition-colors duration-300">Try adjusting your search term</p>
           </div>
         )}
 
         {/* Footer */}
-        <div className="bg-gray-50/80 backdrop-blur-sm px-6 py-3 border-t border-gray-200/30">
-          <p className="text-sm text-gray-600 text-center">
+        <div className="bg-gray-50/80 dark:bg-gray-700/80 backdrop-blur-sm px-6 py-3 border-t border-gray-200/30 dark:border-gray-700/30 transition-colors duration-300">
+          <p className="text-sm text-gray-600 dark:text-gray-400 text-center transition-colors duration-300">
             Showing {filteredCodes.length} of {errorCodes.length} authentication error codes
           </p>
         </div>
