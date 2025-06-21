@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ErrorCodeTable from '@/components/ErrorCodeTable';
 import { Shield, Database, Code2 } from 'lucide-react';
@@ -78,7 +79,17 @@ const Index = () => {
 
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-gray-200/30">
-          <p className="text-gray-500">Built with love by M Junaid Gandhi</p>
+          <p className="text-gray-500">
+            Built with love by{' '}
+            <a 
+              href="https://junaidgandhi.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 transition-colors duration-200 underline decoration-1 underline-offset-2 hover:decoration-2"
+            >
+              M Junaid Gandhi
+            </a>
+          </p>
         </div>
       </div>
     </div>;
